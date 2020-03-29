@@ -24,7 +24,7 @@
   * _노트_: 대부분의 경우 바인더가 빠르게 잘 실행되지만 이 깃허브가 업데이트되면 바인더가 처음부터 새로운 환경을 만들어야 하기 때문에 시간이 좀 걸립니다.
 
 * 또는 [딥노트](https://beta.deepnote.com/launch?template=data-science&url=https%3A//github.com/rickiepark/handson-ml2/blob/master/index.ipynb)(Deepnote):
-<a href="https://beta.deepnote.com/launch?template=data-science&url=https%3A//github.com/rickiepark/handson-ml2/blob/master/index.ipynb"><img src="http://deepnote.com/logo.svg" width="150" /></a>
+<a href="https://beta.deepnote.com/launch?template=data-science&url=https%3A//github.com/rickiepark/handson-ml2/blob/master/index.ipynb"><img src="http://deepnote.com/logo.svg" width="90" /></a>
 
 ### 코드를 실행하지 않고 노트북을 간단히 둘러 보고 싶나요?
 
