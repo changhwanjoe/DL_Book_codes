@@ -3,7 +3,7 @@
 
 파이썬을 사용해 머신러닝을 공부하는데 도움이 되기 위해 이 저장소를 만들었습니다. 여기에는 한빛미디어의 핸즈온 머신러닝 2판의 예제 코드와 연습문제 답도 포함되어 있습니다.
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/51aqYc1QyrL._SX379_BO1,204,203,200_.jpg" title="book" width="150" />
+<img src="cover.png" title="book" width="300" />
 
 이 책은 서점에서 판매 중입니다. [Yes24](http://www.yes24.com/Product/Goods/89959711), [교보문고](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791162242964), [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=237677114), [한빛미디어](http://www.hanbit.co.kr/store/books/look.php?p_code=B7033438574)
 
