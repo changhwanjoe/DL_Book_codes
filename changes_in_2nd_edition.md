@@ -1,123 +1,125 @@
-# Changes in the Second Edition
-The second edition has six main objectives:
+# 2판에서 달라진 점
 
-1. Cover additional ML topics: additional unsupervised learning techniques (including clustering, anomaly detection, density estimation and mixture models), additional techniques for training deep nets (including self-normalized networks), additional computer vision techniques (including Xception, SENet, object detection with YOLO, and semantic segmentation using R-CNN), handling sequences using CNNs (including WaveNet), natural language processing using RNNs, CNNs and Transformers, generative adversarial networks
-2. Cover additional libraries and APIs: Keras, the Data API, TF-Agents for Reinforcement Learning, training and deploying TF models at scale using the Distribution Strategies API, TF-Serving and Google Cloud AI Platform. Also briefly introduce TF Transform, TFLite, TF Addons/Seq2Seq, TensorFlow.js and more.
-3. Mention some of the latest important results from Deep Learning research.
-4. Migrate all TensorFlow chapters to TensorFlow 2, and use TensorFlow's implementation of the Keras API (called tf.keras) whenever possible, to simplify the code examples.
-5. Update the code examples to use the latest version of Scikit-Learn, NumPy, Pandas, Matplotlib and other libraries.
-6. Clarify some sections and fix some errors, thanks to plenty of great feedback from readers.
+2판의 주요 목표 6개는 다음과 같습니다:
 
-Some chapters were added, others were rewritten and a few were reordered. The following table shows the mapping between the 1st edition chapters and the 2nd edition chapters:
+1. 추가적인 ML 주제를 다룹니다: 비지도 학습 기법(군집, 이상치 탐지, 밀도 추정, 혼합 모델), 심층 신경망 훈련 방법(자기 정규화 신경망), 컴퓨터 비전 기법(Xception, SENet, YOLO를 사용한 객체 탐지, R-CNN을 사용한 시맨틱 분할), CNN으로 시퀀스 다루기(WaveNet), RNN/CNN/트랜스포머를 사용한 자연어 처리, 생성적 적대 신경망.
+2. 추가적인 라이브러리와 API를 다룹니다: 케라스, 데이터 API, 강화 학습을 위한 TF-Agents, 분산 전략 API를 사용한 대규모 TF 모델 훈련과 배포, TF 서빙, 구글 클라우드 AI 플랫폼.
+3. 최근 딥러닝 연구 중에서 중요한 결과를 담습니다.
+4. 모든 텐서플로 관련 장을 텐서플로 2로 업그레이드하고 코드를 간소화하기 위해 가능하면 케라스 API(tf.keras)를 사용해 텐서플로 모델을 구현합니다.
+5. 사이킷런, 넘파이, 판다스, 맷플롯립 등의 최신 라이브러리에 맞춰 예제 코드를 업데이트합니다.
+6. 일부 섹션을 명확하게 바꾸고 에러를 고칩니다. 많은 피드백을 준 독자들에게 감사합니다.
 
-|1st ed. chapter  | 2nd ed. chapter | %Changes | 2nd ed. title
+추가된 장과 새로 쓰거나 재배치된 장이 있습니다. 다음 표는 1판과 2판의 장 사이에 연관성을 보여줍니다:
+
+|1판의 장  | 2판의 장 | 변경량(%) | 2판의 제목
 |--|--|--|--|
-|1|1|<10%|The Machine Learning Landscape
-|2|2|<10%|End-to-End Machine Learning Project
-|3|3|<10%|Classification
-|4|4|<10%|Training Models
-|5|5|<10%|Support Vector Machines
-|6|6|<10%|Decision Trees
-|7|7|<10%|Ensemble Learning and Random Forests
-|8|8|<10%|Dimensionality Reduction
-|N/A|9|100% new|Unsupervised Learning Techniques
-|10|10|~75%|Introduction to Artificial Neural Networks with Keras
-|11|11|~50%|Training Deep Neural Networks
-|9|12|100% rewritten|Custom Models and Training with TensorFlow
-|Part of 12|13|100% rewritten|Loading and Preprocessing Data with TensorFlow
-|13|14|~50%|Deep Computer Vision Using Convolutional Neural Networks
-|Part of 14|15|~75%|Processing Sequences Using RNNs and CNNs
-|Part of 14|16|~90%|Natural Language Processing with RNNs and Attention
-|15|17|~75%|Autoencoders and GANs
-|16|18|~75%|Reinforcement Learning
-|Part of 12|19|~75% new|Productionizing TensorFlow Models
+|1|1|<10%|한눈에 보는 머신러닝
+|2|2|<10%|머신러닝 프로젝트 처음부터 끝까지
+|3|3|<10%|분류
+|4|4|<10%|모델 훈련
+|5|5|<10%|서포트 벡터 머신
+|6|6|<10%|결정 트리
+|7|7|<10%|앙상블 학습과 랜덤 포레스트
+|8|8|<10%|차원 축소
+|N/A|9|100% 추가|비지도 학습
+|10|10|~75%|케라스를 사용한 인공 신경망 소개
+|11|11|~50%|심층 신경망 훈련하기
+|9|12|100% 재작성|텐서플로를 사용한 사용자 정의 모델과 훈련
+|12장 일부|13|100% 재작성|텐서플로에서 데이터 적재와 전처리하기
+|13|14|~50%|합성곱 신경망을 사용한 컴퓨터 비전
+|14장 일부|15|~75%|RNN과 CNN을 사용해 시퀀스 처리하기
+|14장 일부|16|~90%|RNN과 어텐션을 사용한 자연어 처리
+|15|17|~75%|오토인코더와 GAN을 사용한 표현 학습과 생성적 학습
+|16|18|~75%|강화 학습
+|12장 일부|19|~75% 추가|대규모 텐서플로 모델 훈련과 배포
 
-More specifically, here are the main changes for the 2nd edition (other than clarifications, corrections and code updates):
+조금 더 구체적인 2판의 주요 변경 사항은 다음과 같습니다(설명 보완, 오류 수정, 코드 업데이트는 제외합니다):
 
-* Chapter 1 – The Machine Learning Landscape
-  * Added more examples of ML applications and the corresponding algorithms.
-  * Added a section on handling mismatch between the training set and the validation & test sets.
-* Chapter 2 – End-to-End Machine Learning Project
-  * Added how to compute a confidence interval.
-  * Improved the installation instructions (e.g., for Windows).
-  * Introduced the upgraded `OneHotEncoder` and the new `ColumnTransformer`.
-  * Added more details on deployment, monitoring and maintenance.
-* Chapter 4 – Training Models
-  * Explained the need for training instances to be Independent and Identically Distributed (IID).
-* Chapter 7 – Ensemble Learning and Random Forests
-  * Added a short section about XGBoost.
-* Chapter 9 – Unsupervised Learning Techniques (new chapter)
-  * Clustering with K-Means, how to choose the number of clusters, how to use it for dimensionality reduction, semi-supervised learning, image segmentation, and more.
-  * The DBSCAN clustering algorithm and an overview of other clustering algorithms available in Scikit-Learn.
-  * Gaussian mixture models, the Expectation-Maximization (EM) algorithm, Bayesian variational inference, and how mixture models can be used for clustering, density estimation, anomaly detection and novelty detection.
-  * Overview of other anomaly detection and novelty detection algorithms.
-* Chapter 10 – Introduction to Artificial Neural Networks with Keras (mostly new)
-  * Added an introduction to the Keras API, including all its APIs (Sequential, Functional and Subclassing), persistence and callbacks (including the `TensorBoard` callback).
-* Chapter 11 – Training Deep Neural Networks (many changes)
-  * Introduced self-normalizing nets, the SELU activation function and Alpha Dropout.
-  * Introduced self-supervised learning.
-  * Added Nadam optimization.
-  * Added Monte-Carlo Dropout.
-  * Added a note about the risks of adaptive optimization methods.
-  * Updated the practical guidelines.
-* Chapter 12 – Custom Models and Training with TensorFlow (completely rewritten)
-  * A tour of TensorFlow 2.
-  * TensorFlow's lower-level Python API.
-  * Writing custom loss functions, metrics, layers, models.
-  * Using auto-differentiation and creating custom training algorithms.
-  * TensorFlow Functions and graphs (including tracing and autograph).
-* Chapter 13 – Loading and Preprocessing Data with TensorFlow (new chapter)
-  * The Data API
-  * Loading/Storing data efficiently using TFRecords.
-  * Writing custom preprocessing layers, using Keras preprocessing layers, encoding categorical features and text, using one-hot vectors, bag-of-words, TF-IDF or embeddings.
-  * An overview of TF Transform and TF Datasets.
-  * Moved the low-level implementation of the neural network to the exercises.
-  * Removed details about queues and readers that are now superseded by the Data API.
-* Chapter 14 – Deep Computer Vision Using Convolutional Neural Networks
-  * Added Xception and SENet architectures.
-  * Added a Keras implementation of ResNet-34.
-  * Showed how to use pretrained models using Keras.
-  * Added an end-to-end transfer learning example.
-  * Added classification and localization.
-  * Introduced Fully Convolutional Networks (FCNs).
-  * Introduced object detection using the YOLO architecture.
-  * Introduced semantic segmentation using R-CNN.
-* Chapter 15 – Processing Sequences Using RNNs and CNNs
-  * Added an introduction to Wavenet.
-  * Moved the Encoder–Decoder architecture and Bidirectional RNNs to Chapter 16.
-* Chapter 16 – Natural Language Processing with RNNs and Attention (new chapter)
-  * Explained how to use the Data API to handle sequential data.
-  * Showed an end-to-end example of text generation using a Character RNN, using both a stateless and a stateful RNN.
-  * Showed an end-to-end example of sentiment analysis using an LSTM.
-  * Explained masking in Keras.
-  * Showed how to reuse pretrained embeddings using TF Hub.
-  * Showed how to build an Encoder–Decoder for Neural Machine Translation using TensorFlow Addons/seq2seq.
-  * Introduced beam search.
-  * Explained attention mechanisms.
-  * Added a short overview of visual attention and a note on explainability.
-  * Introduced the fully attention-based Transformer architecture, including positional embeddings and multi-head attention.
-  * Added an overview of recent language models (2018).
-* Chapters 17 – Representation Learning and Generative Learning Using Autoencoders and GANs
-  * Added convolutional autoencoders and recurrent autoencoders.
-  * Add Generative Adversarial Networks (GANs), including basic GANs, deep convolutional GANs (DCGANs), Progressively Growing GANs (ProGANs) and StyleGANs.
-* Chapter 18 – Reinforcement Learning
-  * Added Double DQN, Dueling DQN and Prioritized Experience Replay.
-  * Introduced TF Agents.
-* Chapter 19 – Training and Deploying TensorFlow Models at Scale (mostly new chapter)
-  * Serving a TensorFlow model using TF Serving and Google Cloud AI Platform.
-  * Deploying a Model to a Mobile or Embedded Device using TFLite.
-  * Using GPUs to Speed Up Computations.
-  * Training models across multiple devices using the Distribution Strategies API.
+* 1장 – 한눈에 보는 머신러닝
+  * ML 애플리케이션 사례와 알고리즘 추가
+  * 훈련 세트와 검증 세트/테스트 세트가 다를 때 처리 방법 추가
+* 2장 – 머신러닝 프로젝트 처음부터 끝까지
+  * 신뢰 구간 계산 방법 추가
+  * 설치 안내 보강 (예를 들어, 윈도우 환경)
+  * 업그레이드된 `OneHotEncoder`와 새로운 `ColumnTransformer` 소개
+  * 배포, 모니터링, 유지보수에 관한 상세 내용 추가
+* 4장 – 모델 훈련
+  * 훈련 샘플이 IID를 만족해야 하는 필요성 설명
+* 7장 – 앙상블 학습과 랜덤 포레스트
+  * XGBoost 절 추가
+* 9장 – 비지도 학습 (새로운 장)
+  * K-평균을 사용한 군집, 클러스터 수를 선택하는 방법, 차원 축소 용도로 사용하는 방법, 준지도 학습, 이미지 분할 등
+  * DBSCAN 군집 알고리즘과 사이킷런에 있는 다른 군집 알고리즘 소개
+  * 가우시안 혼합 모델, EM 알고리즘, 베이지안 변분 추론, 혼합 모델을 군집, 밀도 추정, 이상치 탐지, 특이치 탐지에 사용하는 방법
+  * 다른 이상치 탐지와 특이치 탐지 알고리즘 소개
+* 10장 – 케라스를 사용한 인공 신경망 소개 (거의 다시 씀)
+  * 케라스 (시퀀셜, 함수형, 서브클래싱) API 소개, 모델 저장, (`TensorBoard` 콜백을 포함한)콜백 추가
+* 11장 – 심층 신경망 훈련하기 (변경 사항 많음)
+  * 자기 정규화 신경망, SELU 활성화 함수, 알파 드롭아웃 소개
+  * 자기 지도 학습 소개
+  * Nadam 최적화 추가
+  * 몬테 카를로 드롭아웃 추가
+  * 적응적 최적화 방법의 위험에 관한 노트 추가
+  * 실용적 가이드라인 업데이트
+* 12장 – 텐서플로를 사용한 사용자 정의 모델과 훈련 (완전히 재작성)
+  * 텐서플로 2 소개
+  * 텐서플로의 저수준 파이썬 API
+  * 사용자 정의 손실 함수, 지표, 층, 모델 작성하기
+  * 자동 미분을 사용하여 사용자 정의 훈련 알고리즘 만들기
+  * 텐서플로 함수와 그래프 (트레이싱과 오토그래프 포함)
+* 13장 – 텐서플로에서 데이터 적재와 전처리하기 (새로운 장)
+  * 데이터 API
+  * TFRecord를 사용하여 효율적으로 데이터 적재/저장
+  * 사용자 정의 전처리 층 작성, 케라스 전처리 층 사용, 원-핫 벡터/BoW/TF-IDF/임베딩을 사용해 범주형 특성과 텍스트 인코딩
+  * TF 변환과 TF 데이터셋 소개
+  * 저수준 신경망 구현을 연습문제로 이동
+  * 데이터 API로 대체된 큐와 리더 내용을 삭제
+* 14장 – 합성곱 신경망을 사용한 컴퓨터 비전
+  * Xception과 SENet 구조 추가
+  * ResNet-34의 케라스 구현 추가
+  * 케라스로 사전 훈련된 모델 사용하는 방법
+  * 엔드-투-엔드 전이 학습 예제 추가
+  * 분류와 위치 추정(localization) 추가
+  * 완전 합성곱 신경망(FCN) 소개
+  * YOLO 구조를 사용한 객체 탐지 소개
+  * R-CNN을 사용한 시맨틱 분할 소개
+* 15장 – RNN과 CNN을 사용해 시퀀스 처리하기
+  * Wavenet 소개 추가
+  * 인코더-디코더 구조와 양방향 RNN을 16장으로 이동
+* 16장 – RNN과 어텐션을 사용한 자연어 처리 (새로운 장)
+  * 시퀀셜 데이터를 다루기 위해 데이터 API 사용하는 방법 설명
+  * 상태가 있는 경우와 상태가 없는 Char-RNN을 사용한 엔드-투-엔트 텍스트 생성 예제
+  * LSTM을 사용한 엔드-투-엔드 감성 분석 예제
+  * 케라스 마스킹 설명
+  * TF 허브를 사용해 사전 훈련된 임베딩 재사용하는 방법
+  * 텐서플로 애드온의 seq2seq를 사용해 신경망 기계 번역을 위한 인코더-디코더 만드는 방법
+  * 빔 검색 소개
+  * 어텐션 메커니즘 소개
+  * 비주얼 어텐션에 대한 간단한 소개와 설명 가능성에 대한 노트 추가
+  * 위치 임베딩과 멀티-헤드 어텐션을 포함한 완전한 어텐션 기반 트랜스포머 구조 소개
+  * 최신 언어 모델에 대한 소개 추가 (2018년)
+* 17장 – 오토인코더와 GAN을 사용한 표현 학습과 생성적 학습
+  * 합성곱 오토인코더와 순환 오토인코더 추가
+  * 기본 GAN, 심층 합성곱 GAN(DCGAN), ProGAN, StyleGAN을 포함한 생성적 적대 신경망(GAN) 추가
+* 18장 – 강화 학습
+  * 더블 DQN, 듀얼링 DQN, 우선 순위 기반 경험 재생
+  * TF Agents 소개
+* 19장 – 대규모 텐서플로 모델 훈련과 배포 (거의 다시 씀)
+  * TF 서빙과 구글 클라우드 AI 플랫폼을 사용한 텐서플로 모델 서빙
+  * TFLite를 사용하여 모바일이나 임베디드 장치에 모델 배포하기
+  * GPU를 사용하여 계산 속도를 높이기
+  * 분산 전략 API를 사용해 여러 장치에서 모델 훈련하기
 
-## Migrating from TF 1 to TF 2
-Migrating from TensorFlow 1.x to 2.0 is similar to migrating from Python 2 to 3. The first thing to do is... breathe. Don't rush. TensorFlow 1.x will be around for a while, you have time.
+## TF 1에서 TF 2로 마이그레이션
 
-* You should start by upgrading to the last TensorFlow 1.x version (it will probably be 1.15 by the time you read this).
-* Migrate as much of your code as possible to using high level APIs, either tf.keras or the Estimators API. The Estimators API will still work in TF 2.0, but you should prefer using Keras from now on, as the TF team announced that Keras is preferred and it's likely that they will put more effort into improving the Keras API. Also prefer using Keras preprocessing layers (see chapter 13) rather than `tf.feature_columns`.
-* If your code uses only high-level APIs, then it will be easy to migrate, as it should work the same way in the latest TF 1.x release and in TF 2.0.
-* Get rid of any usage of `tf.contrib` as it won't exist in TF 2.0. Some parts of it were moved to the core API, others were moved to separate projects, and others were not maintained so they were just deleted. If needed, you must install the appropriate libraries or copy some legacy `tf.contrib` code into your own project (as a last resort).
-* Write as many tests as you can, it will make the migration easier and safer.
-* You can run TF 1.x code in TF 2.0 by starting your program with `import tensorflow.compat.v1 as tf` and `tf.disable_v2_behavior()`.
-* Once you are ready to make the jump, you can run the `tf_upgrade_v2` [upgrade script](https://www.tensorflow.org/beta/guide/upgrade).
+텐서플로 1.x에서 2.0으로 마이그레이션하는 것은 파이썬 2에서 3으로 바꾸는 것과 비슷합니다. 맨 먼저 해야할 일은 ... 심호흡입니다. 서두르지 마세요. 텐서플로 1.x은 당분간 지원이 계속되므로 아직 시간이 있습니다.
 
-For more details on migration, checkout TensorFlow's [Migration Guide](https://www.tensorflow.org/beta/guide/migration_guide).
+* 먼저 가장 최근의 텐서플로 1.x 버전으로 업그레이드해야 합니다(이 글을 읽는 시점에는 아마도 1.15일 것입니다).
+* tf.keras나 Estimators API와 같은 고수준 API를 사용하도록 가능한 많은 코드를 바꾸세요. Estimators API가 TF 2.0에서 여전히 작동하지만 지금부터는 케라스를 사용하는 것이 좋습니다. TF 팀에서 케라스를 우선한다고 공표했고 케라스 API를 향상하는데 더 많은 노력을 기울일 가능성이 높습니다. 또한 `tf.feature_columns` 대신에 케라스 전처리 층(13장 참조)을 사용하세요.
+* 고수준 API만 사용하는 코드라면 최신 TF 1.x과 TF 2.0에서 똑같이 작동하기 때문에 마이그레이션하기 쉽습니다.
+* TF 2.0에는 `tf.contrib`가 없기 때문에 이를 사용하지 말아야 합니다. 이 중 일부는 핵심 API로 이동하였고 나머지는 별도의 프로젝트로 옮겨졌습니다. 일부는 더 이상 유지보수되지 않아서 삭제되었습니다. 필요하다면 적당한 라이브러리를 설치하거나 (마지막 수단으로) `tf.contrib`의 레거시 코드를 자신의 프로젝트로 복사하세요.
+* 가능한 많은 테스트 케이스를 작성하세요. 마이그레이션이 쉽고 안전해집니다.
+* TF 2.0에서 `import tensorflow.compat.v1 as tf`와 `tf.disable_v2_behavior()`로 프로그램을 시작하면 TF 1.x 코드를 실행할 수 있습니다.
+* 마이그레이션할 준비가 되면 `tf_upgrade_v2` [업그레이드 스크립트](https://www.tensorflow.org/beta/guide/upgrade)를 실행합니다.
+
+마이그레이션에 대해 더 자세한 내용은 텐서플로의 [마이그레이션 가이드](https://www.tensorflow.org/guide/migrate)를 참조하세요.
