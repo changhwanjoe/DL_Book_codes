@@ -55,7 +55,7 @@ _노트_: [깃허브의 노트북 뷰어](index.ipynb)를 사용할 수도 있�
 그다음 다음 명령을 실행합니다:
 
     $ conda env create -f environment.yml # 윈도우일 경우 environment-windows.yml
-    $ conda activate tf2
+    $ conda activate homl2 # 윈도우일 경우 conda activate tf2
     $ python -m ipykernel install --user --name=python3
 
 그다음 윈도우일 경우 다음 명령을 실행하세요:
