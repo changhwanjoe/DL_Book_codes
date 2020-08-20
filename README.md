@@ -4,6 +4,8 @@
 
 이 노트북은 우분투 리눅스, 파이썬 3.6, 케라스 2.2.2, 2.2.4에서 테스트하였습니다.
 
+텐서플로 2.3에 포함된 케라스 API를 사용하는 버전은 [tf2 브랜치](https://github.com/rickiepark/deep-learning-with-python-notebooks/tree/tf2)에 있습니다.
+
 ## 목차
 
 * 2장:
