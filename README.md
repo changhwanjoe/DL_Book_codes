@@ -7,9 +7,13 @@
 
 이 책은 서점에서 판매 중입니다. [Yes24](http://www.yes24.com/Product/Goods/89959711), [교보문고](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791162242964), [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=237677114), [한빛미디어](http://www.hanbit.co.kr/store/books/look.php?p_code=B7033438574)
 
-이 책의 동영상 강의를 [유튜브](http://bit.ly/homl2-youtube)에 올리고 있습니다. 혼자 공부하시는 분들에게 도움이 되면 좋겠습니다. :-)
-
 **노트**: 1판의 노트북을 찾고 있다면 [rickiepark/handson-ml](https://github.com/rickiepark/handson-ml)을 참고하세요.
+
+## 동영상 강의
+
+이 책의 동영상 강의를 [유튜브](http://bit.ly/homl2-youtube)와 [인프런](https://www.inflearn.com/course/%ED%95%B8%EC%A6%88%EC%98%A8-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D)에서 볼 수 있습니다. 혼자 공부하시는 분들에게 도움이 되면 좋겠습니다. :-)
+
+[![핸즈온 머신러닝 2](https://img.youtube.com/vi/kpuRasV_Q9k/0.jpg)](http://bit.ly/homl2-youtube)
 
 ## 시작하기
 
