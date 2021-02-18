@@ -47,24 +47,18 @@ _노트_: [깃허브의 노트북 뷰어](index.ipynb)를 사용할 수도 있�
 
 ### 자신의 컴퓨터에서 실행하고 싶나요?
 
-먼저 [아나콘다](https://www.anaconda.com/distribution/)(Anaconda) (또는 [미니콘다](https://docs.conda.io/en/latest/miniconda.html)(Miniconda)), [깃](https://git-scm.com/downloads)을 설치하세요. 텐서플로와 호환되는 GPU를 가지고 있다면 [GPU 드라이버](https://www.nvidia.com/Download/index.aspx)를 설치하세요.
+먼저 [아나콘다](https://www.anaconda.com/distribution/)(Anaconda) (또는 [미니콘다](https://docs.conda.io/en/latest/miniconda.html)(Miniconda)), [깃](https://git-scm.com/downloads)을 설치하세요. 텐서플로와 호환되는 GPU를 가지고 있다면 [GPU 드라이버](https://www.nvidia.com/Download/index.aspx)와 알맞은 버전의 CUDA와 cuDNN을 설치하세요(자세한 내용은 텐서플로 문서를 참고하세요).
 
 그다음 터미널에서 다음 명령을 실행하여 이 저장소를 클론하세요(`$` 기호는 입력하지 마세요. 이 기호는 터미널 명령이라는 것을 표시하는 것 뿐입니다):
 
     $ git clone https://github.com/rickiepark/handson-ml2.git
     $ cd handson-ml2
 
-`tensorflow` 패키지는 GPU와 CPU에 모두 사용할 수 있습니다. CPU만 사용하는 경우 `environment.yml`(윈도우일 경우 `environment-windows.yml`)에서 `tensorflow`를 `tensorflow-cpu`로 바꾸면 패키지 다운로드 용량을 줄일 수 있습니다. GPU를 사용하는 경우 `tensorflow-serving-api`를 `tensorflow-serving-api-gpu`로 바꾸세요.
-
 그다음 다음 명령을 실행합니다:
 
     $ conda env create -f environment.yml # 윈도우일 경우 environment-windows.yml
     $ conda activate homl2 # 윈도우일 경우 conda activate tf2
     $ python -m ipykernel install --user --name=python3
-
-그다음 윈도우일 경우 다음 명령을 실행하세요:
-
-    $ pip install --no-index -f https://github.com/Kojoley/atari-py/releases atari_py
 
 이제 주피터를 시작합니다:
 
