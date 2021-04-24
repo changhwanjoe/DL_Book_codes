@@ -66,6 +66,28 @@ _노트_: [깃허브의 노트북 뷰어](index.ipynb)를 사용할 수도 있�
 
 더 자세한 내용은 [설치 가이드](INSTALL.md)를 참고하세요.
 
+## 자주하는 질문
+
+**어떤 파이썬 버전을 사용해야 하나요?**
+
+파이썬 3.7을 추천합니다. 위에 소개한 설치 안내를 따랐다면 파이썬 3.7이 설치되었을 것입니다. 파이썬 3의 다른 버전도 대부분 사용할 수 있지만 일부 라이브러리는 파이썬 3.8이나 3.9를 지원하지 않습니다. 그래서 파이썬 3.7을 권장합니다.
+
+**`load_housing_data()`를 호출할 때 에러가 발생합니다**
+
+`load_housing_data()`를 호출하기 전에 `fetch_housing_data()`를 호출했는지 확인하세요. HTTP 에러가 발생한다면 작성한 코드가 노트북에 있는 코드와 동일한지 확인하세요(복사해서 붙여넣기해 보세요). 문제가 계속된다면 네트워크 설정을 확인하는 것이 좋습니다.
+
+**MacOSX에서 SSL 에러가 발생합니다**
+
+아마 SSL 인증을 설치해야 합니다([스택오버플로우 질문](https://stackoverflow.com/questions/27835619/urllib-and-ssl-certificate-verify-failed-error)을 참고하세요). 공식 웹사이트에서 파이썬을 다운로드했다면 터미널에서 `/Applications/Python\ 3.7/Install\ Certificates.command`을 실행하세요(설치된 버전이 다르면 `3.7`을 바꿔 주세요). MacPorts로 파이썬을 설치했다면 터미널에서 `sudo port install curl-ca-bundle`를 실행하세요.
+
+**이 프로젝트를 로컬에 설치했습니다. 어떻게 최신 버전으로 업데이트하나요?**
+
+[INSTALL.md](INSTALL.md) 문서를 참고하세요.
+
+**아나콘다를 사용할 때 어떻게 파이썬 라이브러리를 최신 버전으로 업데이트하나요?**
+
+[INSTALL.md](INSTALL.md) 문서를 참고하세요.
+
 ## 기여자
 
-유용한 피드백을 전달해 주고 이슈를 등록하고 RP을 보내준 모든 분들께 감사합니다. 특별히 일부 연습문제의 답을 도와준 Haesun Park(박해선)에게 감사합니다. 또 `docker` 디렉토리를 만들어준 Steven Bunkley와 Ziembla에게 감사합니다. 연습문제 답을 도와준 깃허브 유저 SuperYorio에게도 감사합니다.
+유용한 피드백을 전달해 주고 이슈를 등록하고 RP을 보내준 모든 분들께 감사합니다. 특별히 일부 연습문제의 답을 도와준 [Haesun Park(박해선)](https://tensorflow.blog/about/)에게 감사합니다. 또 `docker` 디렉토리를 만들어준 Steven Bunkley와 Ziembla에게 감사합니다. 연습문제 답을 도와준 깃허브 유저 SuperYorio에게도 감사합니다.
